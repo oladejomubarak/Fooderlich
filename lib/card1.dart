@@ -31,6 +31,32 @@ class Card1 extends StatelessWidget {
             // 7
             borderRadius: BorderRadius.all(Radius.circular(10.0)),
           ),
+          child: Stack(
+            children: [
+              // 8
+              Text(category, style:
+              FooderlichTheme.darkTextTheme.bodyLarge,),
+              // 9
+              Positioned(
+                child: Text(
+                  title,
+                  style: FooderlichTheme.darkTextTheme.displayMedium,),
+                top: 20,),
+              // 10
+              Positioned(
+                child: Text(
+                  description,
+                  style: FooderlichTheme.darkTextTheme.bodyLarge,),
+                bottom: 30,
+                right: 0,),
+              // 11
+              Positioned(
+                child: Text(
+                  chef, style: FooderlichTheme.darkTextTheme.bodyLarge,),
+                bottom: 10,
+                right: 0,)
+            ],
+          ),
         )
     );
   }

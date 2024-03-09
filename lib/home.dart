@@ -34,15 +34,15 @@ class _HomeState extends State<Home> {
         body: pages[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           // 5
-            selectedItemColor:
-            Theme.of(context).textSelectionTheme.selectionColor,
-            // 6
+            selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
+            currentIndex: _selectedIndex,
+            onTap: _onItemTapped, // 6
             items: <BottomNavigationBarItem>[
               const BottomNavigationBarItem(
-                  icon: Icon(Icons.car_crash),
+                  icon: Icon(Icons.card_giftcard),
                   label: 'Card'),
               const BottomNavigationBarItem(
-                  icon: Icon(Icons.cake),
+                  icon: Icon(Icons.card_giftcard),
                   label: 'Card2'),
               const BottomNavigationBarItem(
                   icon: Icon(Icons.card_giftcard),

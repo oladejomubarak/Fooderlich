@@ -6,6 +6,19 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 class _HomeState extends State<Home> {
+  int _selectedIndex = 0;
+// 8
+  static List<Widget> pages = <Widget>[
+    Container(color: Colors.red),
+    Container(color: Colors.green),
+    Container(color: Colors.blue)
+  ];
+// 9
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,14 +31,7 @@ class _HomeState extends State<Home> {
                   .textTheme
                   .titleLarge),
       centerTitle: true,),
-      body: Center(
-          child: Text(
-              'Let\'s get cooking 👩‍🍳 ',
-              // 3
-              style: Theme
-                  .of(context)
-                  .textTheme
-                  .displayLarge)),
+        body: pages[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           // 5
             selectedItemColor:

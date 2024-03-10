@@ -30,6 +30,7 @@ class Card2 extends StatelessWidget {
             // TODO 4: add Positioned text
             Expanded(
               // 2
+
               child: Stack(
                 children: [
                   // 3

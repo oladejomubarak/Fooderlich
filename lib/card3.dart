@@ -47,7 +47,8 @@ class Card3 extends StatelessWidget {
           // 12
           alignment: WrapAlignment.start,
           // 13
-          spacing: 12,
+          spacing: 20,
+          runSpacing: 10,
           // 14
           children: [
             Chip(
@@ -65,16 +66,6 @@ class Card3 extends StatelessWidget {
               onDeleted: () {
                 print('delete');
               },
-            ),
-            Chip(
-              label: Text('Carrots',
-                  style: FooderlichTheme.darkTextTheme.bodyLarge),
-              backgroundColor:Colors.black.withOpacity(0.7),
-            ),
-            Chip(
-              label: Text('Apple',
-                  style: FooderlichTheme.darkTextTheme.bodyLarge),
-              backgroundColor:Colors.black.withOpacity(0.7),
             ),
             Chip(
               label: Text('Mango',

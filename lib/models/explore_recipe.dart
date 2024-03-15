@@ -9,7 +9,7 @@ class RecipeCardType {
 
 class ExploreRecipe {
   //String id;
-  //String cardType;
+  String cardType;
   String title;
   String subtitle;
   String backgroundImage;
@@ -29,7 +29,7 @@ class ExploreRecipe {
 
   ExploreRecipe({
     //required this.id,
-   // required this.cardType,
+   required this.cardType,
     required this.title,
     this.subtitle = '',
     this.backgroundImage = '',
@@ -66,7 +66,7 @@ class ExploreRecipe {
 
     return ExploreRecipe(
       //id: json['id'] ?? '',
-      //cardType: json['cardType'] ?? '',
+      cardType: json['cardType'] ?? '',
       title: json['title'] ?? '',
       subtitle: json['subtitle'] ?? '',
       backgroundImage: json['backgroundImage'] ?? '',

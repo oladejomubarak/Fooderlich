@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooderlich/screens/recipes_screen.dart';
 import 'components/card1.dart';
 import 'components/card2.dart';
 import 'components/card3.dart';
@@ -18,7 +19,7 @@ class HomeState extends State<Home> {
   static List<Widget> pages = <Widget>[
     ExploreScreen(),
     // TODO: Replace with RecipesScreen
-    Container(color: Colors.green),
+    RecipesScreen(),
     Container(color: Colors.blue)
   ];
 

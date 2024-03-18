@@ -5,6 +5,7 @@ import 'components/card2.dart';
 import 'components/card3.dart';
 import 'models/explore_recipe.dart';
 import 'screens/explore_screen.dart';
+import 'screens/grocery_screen.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -20,7 +21,7 @@ class HomeState extends State<Home> {
     ExploreScreen(),
     // TODO: Replace with RecipesScreen
     RecipesScreen(),
-    Container(color: Colors.blue)
+    const GroceryScreen(),
   ];
 
   void _onItemTapped(int index) {

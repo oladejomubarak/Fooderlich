@@ -39,8 +39,9 @@ class EmptyGroceryScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(30.0),),
         color: Colors.green,
         onPressed: () {
-          print("Go to Recipe Tab");
+         // print("Go to Recipe Tab");
           // TODO 8: Go to Recipes Tab
+          Provider.of<TabManager>(context, listen: false).goToRecipes();
         },),
     ],),),
     );

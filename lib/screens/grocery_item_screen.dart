@@ -4,6 +4,7 @@ import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:intl/intl.dart';
 import 'package:uuid/uuid.dart';
 import '../models/models.dart';
+import '../components/grocery_tile.dart';
 
 class GroceryItemScreen extends StatefulWidget {
   // 1
@@ -102,6 +103,15 @@ class _GroceryItemScreenState extends State<GroceryItemScreen> {
             const SizedBox(height: 10.0),
             buildQuantityField(),
             // TODO: 19: Add Grocery Tile
+            const SizedBox(height: 16),
+            GroceryTile(
+              item: GroceryItem(
+                name: _name,
+                importance: _importance,
+                color: _currentColor,
+                quantity: _currentSliderValue,
+                date: DateTime(_dueDate.year, _dueDate.month, _dueDate.day,
+                  _timeOfDay.hour, _timeOfDay.minute,), id: '',), onComplete: (bool ) {  },),
           ],),),
     );
   }

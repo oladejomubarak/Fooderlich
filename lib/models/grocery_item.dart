@@ -10,7 +10,7 @@ class GroceryItem {
   final Color? color;
   final int? quantity;
   final DateTime? date;
-  final bool? isComplete;
+  final bool isComplete;
   GroceryItem(
       { required this.id,
         required this.name,

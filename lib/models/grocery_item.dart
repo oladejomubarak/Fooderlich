@@ -5,11 +5,11 @@ class GroceryItem {
   // 2
   final String? id;
   // 3
-  final String? name;
+  final String name;
   final Importance? importance;
-  final Color? color;
+  final Color color;
   final int? quantity;
-  final DateTime? date;
+  final DateTime date;
   final bool isComplete;
   GroceryItem(
       { required this.id,

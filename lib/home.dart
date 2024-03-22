@@ -45,7 +45,9 @@ class HomeState extends State<Home> {
               style: Theme.of(context).textTheme.titleLarge),
         centerTitle: true,),
         // 2
-        body: pages[selectedIndex],
+        //body: pages[selectedIndex],
+        body: IndexedStack(index: selectedIndex, children:
+        pages),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Theme.of(context)
               .textSelectionTheme.selectionColor,

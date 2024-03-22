@@ -3,7 +3,7 @@ import 'package:flutter/painting.dart';
 enum Importance { low, medium, high }
 class GroceryItem {
   // 2
-  final String? id;
+  final String id;
   // 3
   final String name;
   final Importance? importance;
